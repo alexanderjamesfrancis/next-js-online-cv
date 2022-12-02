@@ -1,4 +1,6 @@
 export default function Footer() {
+  const thisYear = new Date().getFullYear()
+
   return (
     <div class="mt-6">
       <div class="footer flex items-center justify-center space-x-4 py-4">
@@ -25,14 +27,14 @@ export default function Footer() {
           <a
             class="footer-link "
             href="downloads/Alex Francis CV Nov 2022.pdf"
-            download="CV of Alexander Francis 2022"
+            download="Alex Francis CV Nov 2022.pdf"
           >
             CV Download
           </a>
         </div>
       </div>
       <p class="flex justify-center">
-        © {new Date().getFullYear.toString} Alex Francis.
+        © {thisYear} Alex Francis
       </p>
     </div>
   );
