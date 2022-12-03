@@ -1,11 +1,12 @@
+import Link from "next/link";
+
 export default function Header() {
   //Navbar dropdown
 
-//   const btn = document.getElementById("menu-btn");
-//   const menu = document.getElementById("menu");
+  //   const btn = document.getElementById("menu-btn");
+  //   const menu = document.getElementById("menu");
 
-//   btn.addEventListener("click", navToggle);
-
+  //   btn.addEventListener("click", navToggle);
 
   function navToggle() {
     btn.classList.toggle("open");
@@ -21,35 +22,35 @@ export default function Header() {
         <div class="flex items-center justify-between w-full space-x-20 p-4 my-6 ">
           {/* <!--'Home' logo--> */}
           <div class="flex text-center">
-            <a href="index.html" class="text-2xl px-6 py-4 hover:text-gray-00">
+            <Link href="/" class="text-2xl px-6 py-4 hover:text-gray-00">
               Alex Francis
-            </a>
+            </Link>
           </div>
           <div class="hidden px-4 md:flex md:flex-row font-serif group">
-            <a
-              href="about-me.html"
+            <Link
+              href="componants/about_me/AboutMe"
               class="text-2xl text-center px-4 text-gray-400 hover:text-black border-b-2"
             >
               About Me
-            </a>
-            <a
-              href="employment-history.html"
+            </Link>
+            <Link
+              href="componants/employment_history/Employment_History"
               class="text-2xl text-center px-4 text-gray-400 hover:text-black border-b-2"
             >
               Employment History
-            </a>
-            <a
-              href="portfolio.html"
+            </Link>
+            <Link
+              href="/"
               class="text-2xl px-4 text-center text-gray-400 hover:text-black border-b-2"
             >
               Portfolio
-            </a>
-            <a
-              href="contact-me.html"
+            </Link>
+            <Link
+              href="/"
               class="text-2xl px-4 text-center text-gray-400 hover:text-black border-b-2"
             >
               Contact Me
-            </a>
+            </Link>
           </div>
           {/* <!-- Hamburger button--> */}
           <div class="md:hidden">
@@ -72,18 +73,18 @@ export default function Header() {
         id="menu"
         class="absolute top-0 bottom-0 left-0 flex-col items-center hidden w-full h-full py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-gray-900 bg-opacity-95"
       >
-        <a href="about-me.html" class="hover:text-gray-300">
+        <Link href="componants/about_me/AboutMe" class="hover:text-gray-300">
           About Me
-        </a>
-        <a href="employment-history.html" class="hover:text-gray-300">
+        </Link>
+        <Link href="componants/employment_history/Employment_History" class="hover:text-gray-300">
           Employment History
-        </a>
-        <a href="portfolio.html" class="hover:text-gray-300">
+        </Link>
+        <Link href="/" class="hover:text-gray-300">
           Portfolio
-        </a>
-        <a href="contact-me.html" class="hover:text-gray-300">
+        </Link>
+        <Link href="/" class="hover:text-gray-300">
           Contact Me
-        </a>
+        </Link>
       </div>
     </div>
   );
