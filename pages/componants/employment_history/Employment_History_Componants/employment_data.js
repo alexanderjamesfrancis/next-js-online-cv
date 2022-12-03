@@ -13,7 +13,7 @@ export default function employment_data() {
     //     content: [],
     //   }],
     // },
-    {
+    [{
       companyName: "Big Tyres LTD - Nottingham ",
       dateWorked: "November 2022 – Present",
       roleWorked: "Data Administration Services (Part Time)",
@@ -169,7 +169,6 @@ export default function employment_data() {
             "Providing detailed information on all Nottingham Properties, delegating enquiries where necessary to colleagues.",
           ],
         },
-        ,
         {
           header: "Customer Service",
           content: [
@@ -217,5 +216,5 @@ export default function employment_data() {
         },
       ],
     }
-  );
+  ]);
 }
