@@ -1,4 +1,6 @@
 import CardBuilder from "./CardBuilder";
+import BuiltCardList from "./BuiltCardList";
+
 export default function JobCardList(data) {
   const {
     companyName,
@@ -8,7 +10,8 @@ export default function JobCardList(data) {
     description,
   } = data.data;
 
-  //console.log(description);
+  // console.log(typeof(description));
+  //console.log(description[0]);
 
   return (
     <div className="flex flex-col max-w-full px-8 py-4 mx-2 my-2 shadow-2xl md:px-28 border scale-95 hover:scale-100 transition duration-200">
@@ -22,9 +25,7 @@ export default function JobCardList(data) {
 
       <p className="mb-4">{descriptionHeader}</p>
       <div className="space-y-8">
-        
-        <CardBuilder role={description} />
-        
+        <BuiltCardList role={description} />
       </div>
     </div>
   );

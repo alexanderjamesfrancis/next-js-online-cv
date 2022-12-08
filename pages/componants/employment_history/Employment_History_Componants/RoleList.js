@@ -1,5 +1,4 @@
 export default function RoleList(roleItem) {
-    console.log();
 
   return (
     <div>
