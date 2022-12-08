@@ -1,16 +1,21 @@
+import RoleList from "./RoleList";
+
 export default function CardBuilder(role) {
-  
+    //console.log(role);
 
-  // const jobItemList = role.content.map((item) => {
-  //     <p>{item}</p>
-  // })
+  const [header, content] = role.role
 
+    //console.log(header);
+  console.log(content.content);
   return (
     <div className="space-y-2">
-      <h4 className="text-lg underline underline-offset-1">{role.header}</h4>
-      {/* {content.map((item) => {
-                return <p>{item}</p>
-            })} */}
+      <h4 className="text-lg underline underline-offset-1">{header.header}</h4>
+      <div>
+        {content.content.map((item, index) => {
+            return(<RoleList roleItem={item} key={index} />)
+        })}
+      </div>
+      
     </div>
   );
 }
