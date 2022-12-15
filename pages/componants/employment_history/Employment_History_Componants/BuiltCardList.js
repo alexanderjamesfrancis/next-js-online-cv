@@ -1,17 +1,7 @@
-import CardBuilder from "./CardBuilder"
+import CardBuilder from "./CardBuilder";
 
+export default function BuiltCardList(role) {
+  const newRole = role.role;
 
-
-export default function BuiltCardList(role){
-
-    //console.log(role.role);
-    const newRole = role.role
-
-    return (<CardBuilder props={newRole} />)
+  return <CardBuilder props={newRole} />;
 }
-
-
-    
-    
-
- 

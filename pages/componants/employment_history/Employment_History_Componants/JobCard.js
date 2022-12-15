@@ -10,9 +10,6 @@ export default function JobCardList(data) {
     description,
   } = data.data;
 
-  // console.log(typeof(description));
-  //console.log(description[0]);
-
   return (
     <div className="flex flex-col max-w-full px-8 py-4 mx-2 my-2 shadow-2xl md:px-28 border scale-95 hover:scale-100 transition duration-200">
       <div className="underline underline-offset-1 mb-4">

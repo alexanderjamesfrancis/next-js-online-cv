@@ -1,25 +1,19 @@
 import RoleList from "./RoleList";
 
 export default function CardBuilder(props) {
-    //console.log(role);
-
-  // const [header, content] = role.role
-  const head = props.props[0].header
-  console.log(props.props[0].content);
-  const content = props.props[0].content
-    //console.log(header);
-  //console.log(content.content);
-  return (
-    
-    <div className="space-y-2">
-      <h4 className="text-lg underline underline-offset-1">{head}</h4>
-      <div>
-
-        {content.map((item, index) => {
-            return(<RoleList roleItem={item} key={index} />)
-        })}
+  const builtCard = props.props.map((item, index) => {
+    console.log(item.content);
+    return (
+      <div key={index} className="space-y-2">
+        <h4 className="text-lg underline underline-offset-1">{item.header}</h4>
+        <div>
+          {item.content.map((line, index) => {
+            return <p key={index}>{line}</p>;
+          })}
+        </div>
       </div>
-      
-    </div>
-  );
+    );
+  });
+
+  return <div>{builtCard}</div>;
 }
