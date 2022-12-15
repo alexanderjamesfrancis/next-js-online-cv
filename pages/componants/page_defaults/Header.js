@@ -40,7 +40,7 @@ export default function Header() {
               Employment History
             </Link>
             <Link
-              href="/"
+              href="componants/portfolio/Portfolio"
               class="text-2xl px-4 text-center text-gray-400 hover:text-black border-b-2"
             >
               Portfolio
