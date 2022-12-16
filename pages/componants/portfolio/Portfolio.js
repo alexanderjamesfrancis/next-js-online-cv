@@ -1,7 +1,16 @@
 import Header from "../page_defaults/Header";
 import Footer from "../page_defaults/Footer";
+import portfolioData from "./portfolio componants/portfolio_data";
+import CardBuilder from "./portfolio componants/portfolio_card_builder";
+
+
+
 
 export default function Portfolio() {
+
+  const data = portfolioData()
+  // console.log(data);
+
   return (
     <div>
       <Header />
@@ -14,7 +23,9 @@ export default function Portfolio() {
             <h5>Hover and click for more info</h5>
           </div>
           <div className="item-container">
-            !!!!Add jsx here!!!!
+            {data.map((item,index) =>{
+              return(<CardBuilder data={item} key={index} />)
+            })}
           </div>
         </div>
       </div>
