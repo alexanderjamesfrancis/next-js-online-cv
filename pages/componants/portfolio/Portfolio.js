@@ -22,7 +22,7 @@ export default function Portfolio() {
             </h2>
             <h5>Hover and click for more info</h5>
           </div>
-          <div className="item-container">
+          <div className="item-container grid grid-rows-3">
             {data.map((item,index) =>{
               return(<CardBuilder data={item} key={index} />)
             })}
