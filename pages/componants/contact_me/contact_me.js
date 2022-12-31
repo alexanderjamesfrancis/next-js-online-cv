@@ -43,8 +43,7 @@ export default function Contact_Me() {
               </div>
               <div className="flex flex-row space-x-2 bg-white hover:bg-black transition ease-in hover:text-white border-2 m-4 px-6 py-2 border-black rounded-full">
                 <button className="" formMethod="POST" type="submit">Submit</button>
-                <Image className="hover:hidden" width="20" height="20" src="/icons/envelope-solid.svg"/>
-
+                <Image className="hover:fill-white" width="20" height="20" src="/icons/envelope-solid.svg" alt="msg-img"/>
               </div>
               
             </form>
