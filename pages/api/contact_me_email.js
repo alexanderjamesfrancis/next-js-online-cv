@@ -1,18 +1,22 @@
-const sgMail = require("@sendgrid/mail");
+import sendGrid from "@sendgrid/mail"
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-const msg = {
-  to: "alexthebigfishmk2@gmail.com", // Change to your recipient
-  from: "alexanderjamesfrancis@hotmail.co.uk", // Change to your verified sender
-  subject: "This is a test email to see if this works",
-  text: "Read this and then see what happens",
-  html: "<strong>and easy to do anywhere, even with Node.js</strong>",
-};
-sgMail
-  .send(msg)
-  .then(() => {
-    console.log("Email sent");
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+sendGrid.setApiKey(process.env.SENDGRID_API_KEY);
+
+async function sendEmail(req,res){
+    try{
+        await sendGrid.send({
+            to: "alexanderjamesfrancis@hotmail.co.uk", // Change to your recipient
+            from: "alexthebigfishmk2@gmail.com", // Change to your verified sender
+            subject: "This is a test email to see if this works",
+            text: "Read this and then see what happens",
+            html: "<strong>and easy to do anywhere, even with Node.js</strong>",
+        })
+    }
+    catch (error) {
+        return res.status(error.statusCode || 500).json({ error: error.message });
+    }
+    return res.status(200).json({ error: "" });
+}
+
+
+export default sendEmail;
