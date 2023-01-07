@@ -6,7 +6,7 @@ import Link from "next/link";
 
 
 export default function CardBuilder(data) {
-    console.log(data);
+    //console.log(data);
 
 const {link,desktopImage,mobileImage,cardName,description} = data.data
 

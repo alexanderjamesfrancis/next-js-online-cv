@@ -1,6 +1,7 @@
 import Header from "../page_defaults/Header";
 import Footer from "../page_defaults/Footer";
 import Image from "next/image";
+//import send_email from "../../api/contact_me_email";
 
 export default function Contact_Me() {
   return (
@@ -41,9 +42,9 @@ export default function Contact_Me() {
                 <label>Your Message</label>
                 <textarea rows="4" required />
               </div>
-              <div className="flex flex-row space-x-2 bg-white hover:bg-black transition ease-in hover:text-white border-2 m-4 px-6 py-2 border-black rounded-full">
-                <button className="" formMethod="POST" type="submit">Submit</button>
-                <Image className="hover:fill-white" width="20" height="20" src="/icons/envelope-solid.svg" alt="msg-img"/>
+              <div className="flex flex-row space-x-2 bg-white hover:bg-gray-600 transition ease-in hover:text-white border-2 m-4 px-6 py-2 border-black rounded-full">
+                <button className="" type="submit">Submit</button>
+                <Image width="20" height="20" src="/icons/envelope-solid.svg" alt="msg-img"/>
               </div>
               
             </form>
