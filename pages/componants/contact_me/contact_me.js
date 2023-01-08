@@ -3,6 +3,7 @@ import Footer from "../page_defaults/Footer";
 import Image from "next/image";
 import { useState } from "react";
 
+
 //import send_email from "../../api/contact_me_email";
 
 export default function Contact_Me() {
@@ -11,10 +12,17 @@ export default function Contact_Me() {
   const [contact, setContact] = useState("");
   const [message, setMessage] = useState("");
 
+  // Setting Button Text
+  const [buttonText, setButtonText] = useState("Send");
+
+  // Setting success or failure messages states
+  // const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  // const [showFailureMessage, setShowFailureMessage] = useState(false);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("/pages/api/contact_me_email.js", {
+    const res = await fetch("/api/contact_me_email", {
       body: JSON.stringify({
         email: email,
         fullName: fullName,
@@ -32,9 +40,10 @@ export default function Contact_Me() {
       console.log(error);
       return;
     }
+    console.log(fullName, email, contact, message);
   };
 
-  console.log(fullname, email, subject, message);
+  
 
   return (
     <div>
@@ -113,7 +122,7 @@ export default function Contact_Me() {
               </div>
               <div className="flex flex-row space-x-2 bg-white hover:bg-gray-600 transition ease-in hover:text-white border-2 m-4 px-6 py-2 border-black rounded-full">
                 <button className="" type="submit">
-                  Submit
+                  {buttonText}
                 </button>
                 <Image
                   width="20"
