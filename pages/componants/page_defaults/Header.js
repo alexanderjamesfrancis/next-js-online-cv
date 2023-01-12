@@ -1,17 +1,25 @@
 import Link from "next/link";
+import { useState } from "react";
+
 
 export default function Header() {
+
+  const [toggle, setToggle] = useState(false)
   //Navbar dropdown
 
-  //   const btn = document.getElementById("menu-btn");
-  //   const menu = document.getElementById("menu");
+    //  const btn = document.getElementById("menu-btn");
+    //  const menu = document.getElementById("menu");
 
-  //   btn.addEventListener("click", navToggle);
+     //btn.addEventListener("click", navToggle);
 
   function navToggle() {
-    btn.classList.toggle("open");
-    menu.classList.toggle("flex");
-    menu.classList.toggle("hidden");
+    console.log('Click');
+    setToggle(toggle ? false : true)
+    console.log(toggle);
+
+    // btn.classList.toggle("open");
+    // menu.classList.toggle("flex");
+    // menu.classList.toggle("hidden");
   }
 
   return (
@@ -56,7 +64,7 @@ export default function Header() {
           <div class="md:hidden">
             <button
               onClick={navToggle}
-              class=" z-40 block hamburger md:hidden focus:outline-none"
+              className="z-40 {toggle ? open : ''} block hamburger md:hidden focus:outline-none"
               type="button"
               id="menu-btn"
             >
@@ -71,7 +79,7 @@ export default function Header() {
       {/*todo Mobile Menu*/}
       <div
         id="menu"
-        class="absolute top-0 bottom-0 left-0 flex-col items-center hidden w-full h-full py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-gray-900 bg-opacity-95"
+        class="absolute top-0 bottom-0 left-0 flex-col items-center {toggle ? flex : hidden} w-full h-full py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-gray-900 bg-opacity-95"
       >
         <Link href="componants/about_me/AboutMe" class="hover:text-gray-300">
           About Me
