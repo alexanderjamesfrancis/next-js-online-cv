@@ -5,6 +5,7 @@ import { useState } from "react";
 export default function Header() {
 
   const [toggle, setToggle] = useState(false)
+  const [count, setCount] = useState(0)
   //Navbar dropdown
 
     //  const btn = document.getElementById("menu-btn");
@@ -13,9 +14,11 @@ export default function Header() {
      //btn.addEventListener("click", navToggle);
 
   function navToggle() {
-    console.log('Click');
+  //   console.log('Click');
     setToggle(toggle ? false : true)
-    console.log(toggle);
+    setCount(count + 1)
+    
+  //   console.log(toggle);
 
     // btn.classList.toggle("open");
     // menu.classList.toggle("flex");
@@ -31,7 +34,7 @@ export default function Header() {
           {/* <!--'Home' logo--> */}
           <div class="flex text-center">
             <Link href="/" class="text-2xl px-6 py-4 hover:text-gray-00">
-              Alex Francis
+              Alex Francis {count}
             </Link>
           </div>
           <div class="hidden px-4 md:flex md:flex-row font-serif group">
@@ -64,7 +67,7 @@ export default function Header() {
           <div class="md:hidden">
             <button
               onClick={navToggle}
-              className="z-40 {toggle ? open : ''} block hamburger md:hidden focus:outline-none"
+              className={`z-40 block hamburger md:hidden focus:outline-none ${toggle? open : ''}`}
               type="button"
               id="menu-btn"
             >
@@ -77,9 +80,9 @@ export default function Header() {
       </nav>
 
       {/*todo Mobile Menu*/}
-      <div
+    <div
         id="menu"
-        class="absolute top-0 bottom-0 left-0 flex-col items-center {toggle ? flex : hidden} w-full h-full py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-gray-900 bg-opacity-95"
+        className={`absolute top-0 bottom-0 left-0 flex-col items-center ${toggle? 'flex': 'hidden'} w-full h-full py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-gray-900 bg-opacity-95`}
       >
         <Link href="componants/about_me/AboutMe" class="hover:text-gray-300">
           About Me
@@ -96,4 +99,5 @@ export default function Header() {
       </div>
     </div>
   );
-}
+
+  }
