@@ -15,7 +15,7 @@ const {link,desktopImage,mobileImage,cardName,description} = data.data
 
 
   return (
-    <div class="group item h-52 md:h-auto hover:cursor-pointer">
+    <div className="group item h-52 md:h-auto hover:cursor-pointer">
       <Link href={link}>
         <Image
           src={desktopImage}

@@ -11,43 +11,43 @@ export default function Header() {
   return (
     <div>
       {/* Nav Bar */}
-      <nav class="container relative min-w-full mx-auto px-6 border-b">
+      <nav className="container relative min-w-full mx-auto px-6 border-b">
         {/* <!--Flex for items in NAV--> */}
-        <div class="flex items-center justify-between w-full space-x-20 p-4 my-6 ">
+        <div className="flex items-center justify-between w-full space-x-20 p-4 my-6 ">
           {/* <!--'Home' logo--> */}
-          <div class="flex text-center">
-            <Link href="/" class="text-2xl px-6 py-4 hover:text-gray-00">
+          <div className="flex text-center">
+            <Link href="/" className="text-2xl px-6 py-4 hover:text-gray-00">
               Alex Francis
             </Link>
           </div>
-          <div class="hidden px-4 md:flex md:flex-row font-serif group">
+          <div className="hidden px-4 md:flex md:flex-row font-serif group">
             <Link
               href="/componants/about_me/AboutMe"
-              class="text-2xl text-center px-4 text-gray-400 hover:text-black border-b-2"
+              className="text-2xl text-center px-4 text-gray-400 hover:text-black border-b-2"
             >
               About Me
             </Link>
             <Link
               href="/componants/employment_history/Employment_History"
-              class="text-2xl text-center px-4 text-gray-400 hover:text-black border-b-2"
+              className="text-2xl text-center px-4 text-gray-400 hover:text-black border-b-2"
             >
               Employment History
             </Link>
             <Link
               href="/componants/portfolio/Portfolio"
-              class="text-2xl px-4 text-center text-gray-400 hover:text-black border-b-2"
+              className="text-2xl px-4 text-center text-gray-400 hover:text-black border-b-2"
             >
               Portfolio
             </Link>
             <Link
               href="/componants/contact_me/contact_me"
-              class="text-2xl px-4 text-center text-gray-400 hover:text-black border-b-2"
+              className="text-2xl px-4 text-center text-gray-400 hover:text-black border-b-2"
             >
               Contact Me
             </Link>
           </div>
           {/* <!-- Hamburger button--> */}
-          <div class="md:hidden">
+          <div className="md:hidden">
             <button
               onClick={navToggle}
               className={`z-40 block hamburger md:hidden focus:outline-none ${
@@ -56,9 +56,9 @@ export default function Header() {
               type="button"
               id="menu-btn"
             >
-              <span class="hamburger-top"></span>
-              <span class="hamburger-middle"></span>
-              <span class="hamburger-bottom"></span>
+              <span className="hamburger-top"></span>
+              <span className="hamburger-middle"></span>
+              <span className="hamburger-bottom"></span>
             </button>
           </div>
         </div>
@@ -71,27 +71,27 @@ export default function Header() {
           toggle ? "flex" : "hidden"
         } w-full h-full py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-gray-900 bg-opacity-95`}
       >
-      <Link href="/" class="hover:text-gray-300">
+      <Link href="/" className="hover:text-gray-300">
           Home
         </Link>
-        <Link href="/componants/about_me/AboutMe" class="hover:text-gray-300">
+        <Link href="/componants/about_me/AboutMe" className="hover:text-gray-300">
           About Me
         </Link>
         <Link
           href="/componants/employment_history/Employment_History"
-          class="hover:text-gray-300"
+          className="hover:text-gray-300"
         >
           Employment History
         </Link>
         <Link
           href="/componants/portfolio/Portfolio"
-          class="hover:text-gray-300"
+          className="hover:text-gray-300"
         >
           Portfolio
         </Link>
         <Link
           href="/componants/contact_me/contact_me"
-          class="hover:text-gray-300"
+          className="hover:text-gray-300"
         >
           Contact Me
         </Link>

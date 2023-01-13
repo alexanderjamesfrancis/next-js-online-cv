@@ -8,7 +8,7 @@ import employment_data from './api/employment_data'
 
 export default function Home() {
   const data = employment_data()
-  console.log(data);
+  //console.log(data);
 
   return (
     <div className={styles.container}>

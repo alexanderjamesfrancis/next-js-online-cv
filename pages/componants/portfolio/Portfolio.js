@@ -17,7 +17,7 @@ export default function Portfolio() {
       <div id="portfolio-nodes" className="brick">
         <div className="container max-w-6xl mx-auto py-24 px-6 md:px-0">
           <div className="flex flex-col items-center space-y-4 justify-center mb-20 md:justify-center">
-            <h2 class="text-4xl text-center uppercase md:text-5xl">
+            <h2 className="text-4xl text-center uppercase md:text-5xl">
               My Portfolio
             </h2>
             <h5>Hover and click for more info</h5>

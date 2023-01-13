@@ -8,7 +8,7 @@ export default function AboutMe() {
   return (
     <div>
       <Header />
-      <div class="brick items-center justify-center">
+      <div className="brick items-center justify-center">
         <About_Me_Body_Text />
         <About_me_skills />
         <About_Me_Hobbies />

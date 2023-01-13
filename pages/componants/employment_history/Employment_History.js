@@ -12,7 +12,7 @@ export default function Employment_History() {
       <Header />
       <div className="brick">
         <div className="items-center justify-center text-center">
-          <h1 class="text-xl p-6 font-bold">Employment History</h1>
+          <h1 className="text-xl p-6 font-bold">Employment History</h1>
           <div>
             {data.map((item, index) => {
               return <JobCardList data={item} key={index} />;
