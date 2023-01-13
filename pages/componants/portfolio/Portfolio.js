@@ -1,6 +1,6 @@
 import Header from "../page_defaults/Header";
 import Footer from "../page_defaults/Footer";
-import portfolioData from "./portfolio componants/portfolio_data";
+import portfolioData from "../../api/portfolio_data";
 import CardBuilder from "./portfolio componants/portfolio_card_builder";
 
 

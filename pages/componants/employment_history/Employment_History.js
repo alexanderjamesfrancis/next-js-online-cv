@@ -1,4 +1,4 @@
-import employment_data from "./Employment_History_Componants/employment_data";
+import employment_data from "../../api/employment_data";
 import BuiltCardList from "./Employment_History_Componants/BuiltCardList";
 import Header from "../page_defaults/Header";
 import Footer from "../page_defaults/Footer";

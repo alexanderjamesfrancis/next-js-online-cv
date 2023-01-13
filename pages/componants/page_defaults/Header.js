@@ -40,7 +40,7 @@ export default function Header() {
               Portfolio
             </Link>
             <Link
-              href="/componants\contact_me\contact_me"
+              href="/componants/contact_me/contact_me"
               class="text-2xl px-4 text-center text-gray-400 hover:text-black border-b-2"
             >
               Contact Me
@@ -90,7 +90,7 @@ export default function Header() {
           Portfolio
         </Link>
         <Link
-          href="/componants\contact_me\contact_me"
+          href="/componants/contact_me/contact_me"
           class="hover:text-gray-300"
         >
           Contact Me

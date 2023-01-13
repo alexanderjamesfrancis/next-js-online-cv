@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import MainHome from './componants/home/Home'
-import employment_data from './componants/employment_history/Employment_History_Componants/employment_data'
+import employment_data from './api/employment_data'
 
 export default function Home() {
   const data = employment_data()
