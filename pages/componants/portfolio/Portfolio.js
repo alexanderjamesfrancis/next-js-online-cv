@@ -2,13 +2,13 @@ import Header from "../page_defaults/Header";
 import Footer from "../page_defaults/Footer";
 import portfolioData from "../../api/portfolio_data";
 import CardBuilder from "./portfolio componants/portfolio_card_builder";
+import { useState } from "react";
 
 
 
 
 export default function Portfolio() {
-
-  const data = portfolioData()
+  const [data, setData] = useState(portfolioData())
   // console.log(data);
 
   return (
