@@ -4,11 +4,24 @@ import Header from "../page_defaults/Header";
 import Footer from "../page_defaults/Footer";
 
 import JobCardList from "./Employment_History_Componants/JobCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Employment_History() {
 
-  const [data, setData] = useState(employment_data())
+  const getData = async () => {
+    const respose = await employment_data()
+    setData(respose)
+  } 
+
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    getData()
+  })
+
+
+
+  
 
 
   //setData(employment_data())
