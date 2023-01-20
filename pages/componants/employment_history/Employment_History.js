@@ -8,20 +8,22 @@ import { useEffect, useState } from "react";
 
 export default function Employment_History() {
 
+  
+
   const getData = async () => {
-    const respose = await employment_data()
-    setData(respose)
+    await fetch("/api/employment_data", {
+      body: JSON.stringify({
+        data: data
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "GET",
+    });
+    return body
   } 
 
-  const [data, setData] = useState([])
-
-  useEffect(() => {
-    getData()
-  })
-
-
-
-  
+  const data = getData
 
 
   //setData(employment_data())

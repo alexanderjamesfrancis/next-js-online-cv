@@ -1,5 +1,4 @@
-export default function employment_data() {
-  return (
+export default function employment_data(req, res) {
     // This is the schema for this data
     // {
     //
@@ -13,7 +12,8 @@ export default function employment_data() {
     //     content: [],
     //   }],
     // },
-    [{
+    res.status(200).json({"data":
+      [{
       companyName: "Big Tyres LTD - Nottingham ",
       dateWorked: "November 2022 – Present",
       roleWorked: "Data Administration Services (Part Time)",
@@ -216,5 +216,5 @@ export default function employment_data() {
         },
       ],
     }
-  ]);
+  ]});
 }
