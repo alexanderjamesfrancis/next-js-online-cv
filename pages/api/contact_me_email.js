@@ -10,9 +10,26 @@ async function sendEmail(req,res){
         await sendGrid.send({
             to: "alexanderjamesfrancis@hotmail.co.uk", // Change to your recipient
             from: "alexthebigfishmk2@gmail.com", // Change to your verified sender
-            subject: "Your have received a message from your website",
+            subject: `Your have been sent a message by ${req.body.fullName}`,
             text: "Cheese", 
-            html: "<strong>and easy to do anywhere, even with Node.js</strong>",
+            html: `<div>
+            <div>
+                <h6>From:</h6>
+                <p>${req.body.fullName}</p>
+            </div>
+            <div>
+                <h6>Contact Number:</h6>
+                <p>${req.body.contact}</p>
+            </div>
+            <div>
+                <h6>Email:</h6>
+                <p>${req.body.email}</p>
+            </div>
+            <div>
+                <h6>Message:</h6>
+                <p>${req.body.message}</p>
+            </div>
+        </div>`
         })
         //console.log("It did the thing");
     }
@@ -27,3 +44,22 @@ async function sendEmail(req,res){
 
 
 export default sendEmail;
+
+{/* <div>
+    <div>
+        <h6>From:</h6>
+        <p>${req.body.fullName}</p>
+    </div>
+    <div>
+        <h6>Contact Number:</h6>
+        <p>${req.body.contact}</p>
+    </div>
+    <div>
+        <h6>Email:</h6>
+        <p>${req.body.email}</p>
+    </div>
+    <div>
+        <h6>Message:</h6>
+        <p>${req.body.message}</p>
+    </div>
+</div> */}
