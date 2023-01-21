@@ -17,7 +17,7 @@ export default function Employment_History() {
 
   useEffect(() => {
     fetchdata();
-    //console.log("Things");
+    
   }, []);
 
   //setData(employment_data())

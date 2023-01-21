@@ -1,8 +1,10 @@
 import RoleList from "./RoleList";
 
 export default function CardBuilder(props) {
-  const builtCard = props.props.map((item, index) => {
-    //console.log(item.content);
+  //console.log(props);
+  const builtCard = props.props.map((item, index) => 
+  {
+    
     return (
       <div key={index} className="space-y-2">
         <h4 className="text-lg underline underline-offset-1">{item.header}</h4>

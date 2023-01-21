@@ -1,6 +1,6 @@
-import Header from "../page_defaults/Header";
-import Footer from "../page_defaults/Footer";
-import CardBuilder from "./portfolio componants/portfolio_card_builder";
+import Header from "../../../componants/page_defaults/Header";
+import Footer from "../../../componants/page_defaults/Footer";
+import CardBuilder from "../../../componants/portfolio componants/portfolio_card_builder";
 import { useState, useEffect } from "react";
 
 

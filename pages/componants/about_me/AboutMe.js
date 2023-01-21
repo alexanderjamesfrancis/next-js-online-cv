@@ -1,8 +1,8 @@
-import About_Me_Body_Text from "./about_me_componants/about_me_body";
-import About_Me_Hobbies from "./about_me_componants/about_me_hobbies";
-import About_me_skills from "./about_me_componants/about_me_skills";
-import Header from "../page_defaults/Header";
-import Footer from "../page_defaults/Footer";
+import About_Me_Body_Text from "../../../componants/about_me_componants/about_me_body";
+import About_Me_Hobbies from "../../../componants/about_me_componants/about_me_hobbies";
+import About_me_skills from "../../../componants/about_me_componants/about_me_skills";
+import Header from "../../../componants/page_defaults/Header";
+import Footer from "../../../componants/page_defaults/Footer";
 
 export default function AboutMe() {
   return (
