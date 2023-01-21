@@ -1,30 +1,24 @@
 // import {employmentdata} from "../../api/employment_data"
-import BuiltCardList from "./Employment_History_Componants/BuiltCardList";
-import Header from "../page_defaults/Header";
-import Footer from "../page_defaults/Footer";
+import BuiltCardList from "../../../componants/Employment_History_Componants/BuiltCardList";
+import Header from "../../../componants/page_defaults/Header";
+import Footer from "../../../componants/page_defaults/Footer";
 
-
-import JobCardList from "./Employment_History_Componants/JobCard";
+import JobCardList from "../../../componants/Employment_History_Componants/JobCard";
 import { useEffect, useState } from "react";
 
 export default function Employment_History() {
-
-  const [data, setData] = useState([])
+  const [data, setData] = useState([]);
 
   const fetchdata = async () => {
     //console.log("Fetching Data");
-    const response = await fetch("/api/employment/employment_data_handler")
-    setData(await response.json())
-    
-    
-  }
+    const response = await fetch("/api/employment/employment_data_handler");
+    setData(await response.json());
+  };
 
-  useEffect(()=>{
-    fetchdata()
+  useEffect(() => {
+    fetchdata();
     //console.log("Things");
-  },[])  
-  
-
+  }, []);
 
   //setData(employment_data())
   return (

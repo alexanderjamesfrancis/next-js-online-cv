@@ -1,8 +1,7 @@
-import Header from "../page_defaults/Header";
-import Footer from "../page_defaults/Footer";
+import Header from "../../../componants/page_defaults/Header";
+import Footer from "../../../componants/page_defaults/Footer";
 import Image from "next/image";
 import { useState } from "react";
-
 
 //import send_email from "../../api/contact_me_email";
 
@@ -42,8 +41,6 @@ export default function Contact_Me() {
     }
     console.log(fullName, email, contact, message);
   };
-
-  
 
   return (
     <div>
