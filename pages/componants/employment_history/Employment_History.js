@@ -3,27 +3,27 @@ import BuiltCardList from "./Employment_History_Componants/BuiltCardList";
 import Header from "../page_defaults/Header";
 import Footer from "../page_defaults/Footer";
 
+
 import JobCardList from "./Employment_History_Componants/JobCard";
 import { useEffect, useState } from "react";
 
 export default function Employment_History() {
 
+  const [data, setData] = useState([])
+
+  const fetchdata = async () => {
+    //console.log("Fetching Data");
+    const response = await fetch("/api/employment/employment_data_handler")
+    setData(await response.json())
+    
+    
+  }
+
+  useEffect(()=>{
+    fetchdata()
+    //console.log("Things");
+  },[])  
   
-
-  const getData = async () => {
-    await fetch("/api/employment_data", {
-      body: JSON.stringify({
-        data: data
-      }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-      method: "GET",
-    });
-    return body
-  } 
-
-  const data = getData
 
 
   //setData(employment_data())

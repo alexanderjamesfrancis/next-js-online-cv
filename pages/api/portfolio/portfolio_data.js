@@ -1,5 +1,4 @@
-export default function portfolioData(){
-    return(
+export const portfoliodata =
 
         //Data Model:
         // {
@@ -62,5 +61,3 @@ export default function portfolioData(){
             description: "Made using NextJs and React"
         }
     ]
-    )
-}
