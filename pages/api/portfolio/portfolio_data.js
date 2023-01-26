@@ -19,7 +19,7 @@ export const portfoliodata =
         },
          {
             link: "https://github.com/alexanderjamesfrancis/ondemandpeachbot",
-            desktopImage: "/images/desktop/bed-peach.jpg",
+            desktopImage: "/images/desktop/peachbot.jpg",
             mobileImage: "/images/mobile/peach.jpg",
             cardName: "PeachBot",
             description: "A Discord bot made using Python to summon pictures of Peach the Cat"

@@ -14,8 +14,8 @@ export default function MainHome() {
         <div className="flex justify-center items-center mx-auto h-1/2 w-1/2 md:h-[400px] md:w-[400px]">
           <Image
             src="/images/alex_image-modified.png"
-            width={100}
-            height={100}
+            width={300}
+            height={300}
             className=""
             alt=""
           />
