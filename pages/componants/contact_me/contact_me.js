@@ -56,11 +56,11 @@ export default function Contact_Me() {
           <p>Alex Francis</p>
           <p>Home Address: Hucknall, Nottingham.</p>
           <p>Mobile: 07985 921903</p>
-          <p>E-mail: alexanderjamesfrancis@hotmail.co.uk</p>
+          
         </div>
         <div>
-          <div className="items-center">
-            <h4>Send me a message!</h4>
+          <div className="flex justify-center">
+            <h4 className="">Send me a message!</h4>
           </div>
           <div className="">
             <form
@@ -84,6 +84,7 @@ export default function Contact_Me() {
               <div className="form-item">
                 <label>Email</label>
                 <input
+                className="rounded-md border-2"
                   type="email"
                   value={email}
                   onChange={(e) => {
@@ -96,6 +97,7 @@ export default function Contact_Me() {
               <div className="form-item">
                 <label>Contact Number</label>
                 <input
+                className="rounded-md border-2"
                   type="text"
                   value={contact}
                   onChange={(e) => {
@@ -108,6 +110,7 @@ export default function Contact_Me() {
               <div className="form-item">
                 <label>Your Message</label>
                 <textarea
+                className="rounded-md border-2"
                   rows="4"
                   value={message}
                   onChange={(e) => {
