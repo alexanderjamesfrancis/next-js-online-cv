@@ -47,7 +47,7 @@ export default function Header() {
             </Link>
           </div>
           {/* <!-- Hamburger button--> */}
-          <div className="md:hidden">
+          <div className="md:hidden overflow-hidden">
             <button
               onClick={navToggle}
               className={`z-40 block hamburger md:hidden focus:outline-none ${
@@ -69,7 +69,7 @@ export default function Header() {
         id="menu"
         className={`absolute top-0 bottom-0 left-0 flex-col items-center ${
           toggle ? "flex" : "hidden"
-        } w-full h-full py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-gray-900 bg-opacity-95`}
+        } w-full h-full py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-gray-900 bg-opacity-95 z-30`}
       >
       <Link href="/" className="hover:text-gray-300">
           Home
