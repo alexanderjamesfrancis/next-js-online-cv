@@ -2,6 +2,8 @@ import Header from "../../../componants/page_defaults/Header";
 import Footer from "../../../componants/page_defaults/Footer";
 import Image from "next/image";
 import { useState } from "react";
+import SendButton from "../../../componants/contact_me_componants/sendButton";
+
 
 //import send_email from "../../api/contact_me_email";
 
@@ -12,11 +14,19 @@ export default function Contact_Me() {
   const [message, setMessage] = useState("");
 
   // Setting Button Text
-  const [buttonText, setButtonText] = useState("Send");
+  //const [buttonText, setButtonText] = useState("Send");
 
   // Setting success or failure messages states
   // const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   // const [showFailureMessage, setShowFailureMessage] = useState(false);
+
+  // "Send" Button change if clicked toggle
+  const [sendButton, setSendButton] = useState(false)
+  console.log(sendButton);
+
+  // function buttontype(){
+  //   !sendButton ? <sendButton/> : <msgSent />
+  // }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -39,7 +49,9 @@ export default function Contact_Me() {
       console.log(error);
       return;
     }
-    console.log(fullName, email, contact, message);
+    //console.log(fullName, email, contact, message);
+    console.log(sendButton);
+    setSendButton(true)
   };
 
   return (
@@ -120,17 +132,7 @@ export default function Contact_Me() {
                   required
                 />
               </div>
-              <div className="flex flex-row space-x-2 bg-white hover:bg-gray-600 transition ease-in hover:text-white border-2 m-4 px-6 py-2 border-black rounded-full">
-                <button className="" type="submit">
-                  {buttonText}
-                </button>
-                <Image
-                  width="20"
-                  height="20"
-                  src="/icons/envelope-solid.svg"
-                  alt="msg-img"
-                />
-              </div>
+              <SendButton click={sendButton} />
             </form>
           </div>
         </div>
