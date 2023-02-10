@@ -41,6 +41,7 @@ export const employmentdata =
               "CSS (with Tailwind and Bootstrap basics)",
               "Javascript",
               "React",
+              "NextJS",
               "EJS",
             ],
           },

@@ -26,7 +26,7 @@ export default function Footer() {
           <i className="fa-solid fa-newspaper"></i>
           <a
             className="footer-link "
-            href="/downloads/Alex Francis CV Nov 2022.pdf"
+            href="/downloads/Alex Francis CV Feb 2023.pdf"
             download="Alex Francis CV.pdf"
           >
             CV Download
