@@ -1,6 +1,6 @@
-import Header from "../../../componants/page_defaults/Header";
-import Footer from "../../../componants/page_defaults/Footer";
-import CardBuilder from "../../../componants/portfolio componants/portfolio_card_builder";
+import Header from "../../componants/page_defaults/Header";
+import Footer from "../../componants/page_defaults/Footer";
+import CardBuilder from "../../componants/portfolio componants/portfolio_card_builder";
 import { useState, useEffect } from "react";
 
 
@@ -11,7 +11,6 @@ export default function Portfolio() {
   const [data, setData] = useState([])
 
   const fetchdata = async () => {
-    //console.log("Fetching Data");
     const response = await fetch("/api/portfolio/portfolio_data_handler")
     setData(await response.json())
     
@@ -20,9 +19,7 @@ export default function Portfolio() {
 
   useEffect(()=>{
     fetchdata()
-    //console.log("Things");
   },[])  
-  // console.log(data);
 
   return (
     <div>

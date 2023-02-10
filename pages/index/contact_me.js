@@ -1,8 +1,8 @@
-import Header from "../../../componants/page_defaults/Header";
-import Footer from "../../../componants/page_defaults/Footer";
+import Header from "../../componants/page_defaults/Header";
+import Footer from "../../componants/page_defaults/Footer";
 import Image from "next/image";
 import { useState } from "react";
-import SendButton from "../../../componants/contact_me_componants/sendButton";
+import SendButton from "../../componants/contact_me_componants/sendButton";
 
 
 //import send_email from "../../api/contact_me_email";
@@ -22,11 +22,7 @@ export default function Contact_Me() {
 
   // "Send" Button change if clicked toggle
   const [sendButton, setSendButton] = useState(false)
-  console.log(sendButton);
 
-  // function buttontype(){
-  //   !sendButton ? <sendButton/> : <msgSent />
-  // }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -49,8 +45,6 @@ export default function Contact_Me() {
       console.log(error);
       return;
     }
-    //console.log(fullName, email, contact, message);
-    console.log(sendButton);
     setSendButton(true)
   };
 

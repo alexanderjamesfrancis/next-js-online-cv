@@ -22,25 +22,25 @@ export default function Header() {
           </div>
           <div className="hidden px-4 md:flex md:flex-row font-serif group">
             <Link
-              href="/componants/about_me/AboutMe"
+              href="/index/AboutMe"
               className="text-2xl text-center px-4 text-gray-400 hover:text-black border-b-2"
             >
               About Me
             </Link>
             <Link
-              href="/componants/employment_history/Employment_History"
+              href="/index/Employment_History"
               className="text-2xl text-center px-4 text-gray-400 hover:text-black border-b-2"
             >
               Employment History
             </Link>
             <Link
-              href="/componants/portfolio/Portfolio"
+              href="/index/Portfolio"
               className="text-2xl px-4 text-center text-gray-400 hover:text-black border-b-2"
             >
               Portfolio
             </Link>
             <Link
-              href="/componants/contact_me/contact_me"
+              href="/index/contact_me"
               className="text-2xl px-4 text-center text-gray-400 hover:text-black border-b-2"
             >
               Contact Me
@@ -74,23 +74,23 @@ export default function Header() {
       <Link href="/" className="hover:text-gray-300">
           Home
         </Link>
-        <Link href="/componants/about_me/AboutMe" className="hover:text-gray-300">
+        <Link href="/index/AboutMe" className="hover:text-gray-300">
           About Me
         </Link>
         <Link
-          href="/componants/employment_history/Employment_History"
+          href="/index/Employment_History"
           className="hover:text-gray-300"
         >
           Employment History
         </Link>
         <Link
-          href="/componants/portfolio/Portfolio"
+          href="/index/Portfolio"
           className="hover:text-gray-300"
         >
           Portfolio
         </Link>
         <Link
-          href="/componants/contact_me/contact_me"
+          href="/index/contact_me"
           className="hover:text-gray-300"
         >
           Contact Me
