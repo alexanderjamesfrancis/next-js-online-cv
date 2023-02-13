@@ -37,7 +37,7 @@ a {
 
 /*Portfolio item CSS*/
 .item-container {
-    @apply flex flex-col justify-between w-full mb-4 text-2xl text-white uppercase md:grid md:grid-cols-4 md:justify-center gap-8 md:space-y-0 md:space-x-0
+    @apply flex flex-col justify-between w-full mb-4 text-2xl text-white uppercase md:grid md:grid-cols-4 md:grid-rows-3 md:justify-center gap-8 md:space-y-0 md:space-x-0
 }
 
 .item {
