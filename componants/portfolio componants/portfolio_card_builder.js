@@ -19,7 +19,7 @@ const {link,desktopImage,mobileImage,cardName,description} = data.data
       <Link href={link}>
         <Image
           src={desktopImage}
-          className="hidden min-h-full duration-200 md:block group-hover:scale-110 object-cover aspect-[2/3]"
+          className="hidden min-h-full duration-200 md:block group-hover:scale-110 object-cover md:aspect-[9/16] aspect-[16/9]"
           width={300}
           height="3000"
           
