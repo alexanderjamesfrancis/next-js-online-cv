@@ -48,15 +48,15 @@ export const portfoliodata =
         },
         {
             link: "/",
-            desktopImage: "/images/desktop/injury-deadpool-desktop.png",
+            desktopImage: "/images/desktop/injury-deadpool-desktop-2.png",
             mobileImage: "/images/mobile/injury-deadpool-mobile.png",
             cardName: "The Injury Deadpool",
             description: "A web application to keep track of and guess the next climbing injury earning points in the process (Coming Soon)"
         },
         {
             link: "https://weather-app-ten-blush.vercel.app/",
-            desktopImage: "/images/desktop/weather-icon.png",
-            mobileImage: "/images/mobile/weather-icon.png",
+            desktopImage: "/images/desktop/weather.jpg",
+            mobileImage: "/images/mobile/weather-duel.jpg",
             cardName: "Weather App",
             description: "Made using NextJs and React"
         }

@@ -15,11 +15,11 @@ const {link,desktopImage,mobileImage,cardName,description} = data.data
 
 
   return (
-    <div className="group item h-52 md:h-full md:w-full align-center hover:cursor-pointer">
+    <div className="group item h-64 md:h-full md:w-full align-center hover:cursor-pointer">
       <Link href={link}>
         <Image
           src={desktopImage}
-          className="hidden min-h-full duration-200 md:block group-hover:scale-110 object-cover md:aspect-[9/16] aspect-[16/9]"
+          className="hidden min-h-full duration-200 md:block group-hover:scale-110 object-fill md:aspect-[9/16] aspect-[16/9]"
           width={300}
           height="3000"
           
