@@ -6,15 +6,14 @@ export const employmentdata =
         dateWorked: "November 2022 – Present",
         roleWorked: "Data Administration Services (Part Time)",
         descriptionHeader:
-          "Due to my positive history with Big Tyres LTD, I was asked if I would like to return in a temporary measure to provide data services for the e-commerce back-end. This role is allowing me some practical interaction with data whilst allowing me to continue my Web Development training.",
+          "Due to my positive history with Big Tyres LTD, I was asked if I would like to return to provide data services for the e-commerce business as a contractor. This role has allowed me some practical interaction with data and learn additional skills associated with data handling and management.",
         description: [
           {
             header: "New Product Entry and Updating",
             content: [
               "Taking new product files and reformatting data to adhere to pre-defined schema and updating existing product lines with new SKUs.",
               "Researching relevant information for new products. E.G EU tyre label for eligible products or finding assets and information in order to properly market new products.",
-              "Both actions require heavy use of excel and PHP import tools to a Magento back-end.",
-              "Bug fixing, if there are any issues with the data import. ",
+              "Ensuring data integrity for existing products & bug fixing.",
             ],
           },
           {
@@ -25,6 +24,14 @@ export const employmentdata =
               "Working with suppliers when required to aquire product specific information.",
             ],
           },
+          {
+            header: "Front-End Building",
+            content: [
+              "Creating new assets for the Big Tyre LTD website using Magneto drag and drop tools as well as graphics and banner material.",
+              "Configuring new pages and elements using Tailwind CSS.",
+              "Working with the IT Manager to resolve bugs and discuss best practices for new pages."
+            ]
+          }
         ],
       },
       {
@@ -32,7 +39,7 @@ export const employmentdata =
         dateWorked: "December 2021 – October 2022",
         roleWorked: "In Training",
         descriptionHeader:
-          "Reaching the conclusion of my previous role, I have taken time for personal development and retraining. This time has been spent learning Front-End Web Development and programming. The skills I have learnt are as follows, with further knowledge growing daily: ",
+          "Reaching the conclusion of my previous role, I took time for personal development and retraining. This time was spent learning Front-End Web Development and programming. The skills I learnt were:",
         description: [
           {
             header: "Front End Website Skills",
@@ -59,7 +66,6 @@ export const employmentdata =
             header: "Python",
             content: [
               "General logical operators and rudimentary programs",
-              "Tkinter",
               "Data processing using modules such as Beautiful Soup and Pandas",
               "Selenium",
               "OOP",
