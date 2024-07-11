@@ -22,7 +22,7 @@ export default function MainHome() {
         </div>
         <div>
           <h5 className="text-lg mt-16 text-center font-semibold">
-            An Aspiring Web Developer and Programmer
+            Looking towards my next opportunity
           </h5>
         </div>
       </div>

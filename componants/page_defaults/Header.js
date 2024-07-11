@@ -33,12 +33,12 @@ export default function Header() {
             >
               Employment History
             </Link>
-            <Link
+            {/* <Link
               href="/index/Portfolio"
               className="text-2xl px-4 text-center text-gray-400 hover:text-black border-b-2"
             >
               Portfolio
-            </Link>
+            </Link> */}
             <Link
               href="/index/contact_me"
               className="text-2xl px-4 text-center text-gray-400 hover:text-black border-b-2"
@@ -83,12 +83,12 @@ export default function Header() {
         >
           Employment History
         </Link>
-        <Link
+        {/* <Link
           href="/index/Portfolio"
           className="hover:text-gray-300"
         >
           Portfolio
-        </Link>
+        </Link> */}
         <Link
           href="/index/contact_me"
           className="hover:text-gray-300"
