@@ -2,9 +2,9 @@
 export const employmentdata =
     [
       {
-        companyName: "Big Tyres LTD - Nottingham ",
+        companyName: "Alex Francis Data Services – Self Employed",
         dateWorked: "November 2022 – Present",
-        roleWorked: "Data Administration Services (Part Time)",
+        roleWorked: "Data Administration Services (Contractor)",
         descriptionHeader:
           "Due to my positive history with Big Tyres LTD, I was asked if I would like to return to provide data services for the e-commerce business as a contractor. This role has allowed me some practical interaction with data and learn additional skills associated with data handling and management.",
         description: [
